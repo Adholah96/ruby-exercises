@@ -15,6 +15,7 @@ end
 
 def divide(a, b)
   # return the result of dividing a by b
+  a / b
 end
 
 def remainder(a, b)
@@ -24,7 +25,7 @@ end
 
 def float_division(a, b)
   # return the result of dividing a by b as a float, rather than an integer
-  a.to_f / b
+  a / b.to_f
 end
 
 def string_to_number(string)
