@@ -15,7 +15,7 @@ end
 # return value: an array containing items in both arrays
 # hint: use Array#intersection
 def common_sports(current_sports, favorite_sports)
-    current_sports.merge(favorite_sports)
+    current_sports.intersection(favorite_sports)
 end
 
 
@@ -43,7 +43,7 @@ end
 # hint: use String#ord
 def ascii_code(character)
     if character.length != 1
-        return "input Error"
+        return "Input Error"
     else
         character.ord
     end
@@ -61,11 +61,11 @@ end
 
 def pet_pun(animal)
     if animal == "cat"
-        puts "Cats are purr-fect! (perfect)"
+        puts "Cats are purr-fect!"
     elsif animal == "dog"
-        puts "Dogs are paw-some! (awesome)"
+        puts "Dogs are paw-some!"
     else
-        puts "I think #{animal}s have pet-tential! (potential)"
+        puts "I think #{animal}s have pet-tential!"
     end
 end
 
@@ -74,7 +74,7 @@ end
 # return value: true if the year is between 2001 - 2100, otherwise return false
 # hint: use Comparable#between?
 def twenty_first_century?(year)
-    if year.between(2001,2100)
+    if year.between?(2001,2100)
         return true
     else
         false
